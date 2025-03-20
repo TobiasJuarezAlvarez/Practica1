@@ -30,7 +30,7 @@ answers = [
 correct_answers_index = [1, 2, 0, 3, 1]
 
 #Se escoge 3 preguntas de manera aleaotoria (Las preguntas pueden repertirse)
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 # El usuario deberá contestar 3 preguntas
 for question, answers, correct_answer in questions_to_ask:
